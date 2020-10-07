@@ -128,8 +128,8 @@
     
     .card-container
     {
-            @include flex(column,center,center);
-            outline: solid ;
+        @include flex(column,center,center);
+    
         
           
     }
