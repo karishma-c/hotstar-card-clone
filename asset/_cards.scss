@@ -1,0 +1,141 @@
+.container
+{
+    @include flex(column,flex-start,space-between);
+    margin: 10px 10px 30px 10px;
+
+    .card-container
+    {
+        @include flex(row,flex-start,flex-start);
+        .card
+        {
+           margin: .5em 0 1em 1em;
+           width: 147px;
+           transition-duration: 0.5s;
+           transition-timing-function: ease;
+           position: relative;
+           border-radius: $border-radius;
+
+     
+            &:hover
+           {
+                transform: scale(1.3);
+                z-index: 1;
+                & .card-details
+                {
+                  opacity: 1;
+                } 
+            }
+            & .card-img
+            {
+                width: inherit;
+                position: relative;
+                padding-bottom: calc(1.32821 * 100%); //100% refers to 100% of the width of the parent element(here parent - "card").
+                & img
+                {
+                   position: absolute;
+                   width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                    display: inline-block;
+
+                }
+            }
+            & .card-details{
+                font-family: $font-family;
+                opacity: 0;
+                color: $color-1;
+                bottom: 0;
+                width: 100%;
+                position: absolute;
+                width: inherit;
+                background-image: linear-gradient(to bottom, rgba(4,8,15,0), $BG_COLOR_L1, $BG_COLOR_L1);
+                padding: 30px 5px 7px 5px;
+                .card-title{
+                   font-size: $font-size;
+                   font-weight: $font-weight-1;
+                   margin: 0;
+                }
+                .title-info{
+                    font-size: $font-size-1;
+                    font-weight: $font-weight-1;
+                    margin: 1px 0 0 0;
+                }
+                .description{
+                    font-size: $font-size-1;
+                    margin: 3px 0 0 0;
+                }
+                .action-btn
+                {
+                   @include flex(column,none,none);
+                   .btn
+                   {
+                        font-size: $font-size-1;
+                        padding: 3px 5px;
+                        &:hover{
+                          background-color: grey;
+                          border-radius: 2px;
+                        }
+                    }
+                    * + *
+                    {
+                       margin: 1px 0;
+                    }
+                }
+            }   
+        }
+    }
+    .cricket-card-container
+    {
+        @extend .card-container;
+        .cricket-card
+        {
+           @extend .card;
+           width: 200px;
+           & .card-img
+            {
+                width: inherit;
+                position: relative;
+                padding-bottom: calc(0.56821 * 100%);
+            }
+           .cric-card-details {
+               @extend .card-details;
+               .card-title {
+                   .link-btn {
+                      font-size: $font-size;
+                      font-weight: $font-weight-1;
+                    }
+                
+                }
+            }
+        }    
+    }
+    .movies-card-container
+    {
+        @extend .card-container;
+    
+        .movie-card {
+            @extend .card;
+            .movie-card-details {
+                @extend .card-details;
+
+            }
+        }
+    }  
+}
+
+@media (max-width:700px)
+{
+    
+    .card-container
+    {
+            @include flex(column,center,center);
+            outline: solid ;
+        
+          
+    }
+    .cricket-card-container
+    {
+        @include flex(column,center,center);
+    }
+
+}

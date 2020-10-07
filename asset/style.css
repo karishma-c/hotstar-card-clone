@@ -1,0 +1,254 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 10px 10px 30px 10px;
+}
+
+.container .card-container, .container .cricket-card-container, .container .movies-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .card-container .card, .container .cricket-card-container .card, .container .movies-card-container .card, .container .cricket-card-container .cricket-card, .container .movies-card-container .movie-card {
+  margin: .5em 0 1em 1em;
+  width: 147px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  position: relative;
+  border-radius: 8px;
+}
+
+.container .card-container .card:hover, .container .cricket-card-container .card:hover, .container .movies-card-container .card:hover, .container .cricket-card-container .cricket-card:hover, .container .movies-card-container .movie-card:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  z-index: 1;
+}
+
+.container .card-container .card:hover .card-details, .container .cricket-card-container .card:hover .card-details, .container .movies-card-container .card:hover .card-details, .container .cricket-card-container .cricket-card:hover .card-details, .container .movies-card-container .movie-card:hover .card-details, .container .card-container .card:hover .cricket-card-container .cricket-card .cric-card-details, .container .cricket-card-container .card:hover .cricket-card .cric-card-details, .container .cricket-card-container .cricket-card .card:hover .cric-card-details, .container .movies-card-container .card:hover .cricket-card-container .cricket-card .cric-card-details, .container .cricket-card-container .cricket-card:hover .cric-card-details, .container .cricket-card-container .movies-card-container .movie-card:hover .cricket-card .cric-card-details, .container .movies-card-container .cricket-card-container .movie-card:hover .cricket-card .cric-card-details, .container .movies-card-container .cricket-card-container .cricket-card .movie-card:hover .cric-card-details, .container .movies-card-container .movie-card:hover .cricket-card-container .cricket-card .cric-card-details, .container .cricket-card-container .cricket-card .movies-card-container .movie-card:hover .cric-card-details, .container .card-container .card:hover .movies-card-container .movie-card .movie-card-details, .container .cricket-card-container .card:hover .movies-card-container .movie-card .movie-card-details, .container .movies-card-container .card:hover .movie-card .movie-card-details, .container .movies-card-container .movie-card .card:hover .movie-card-details, .container .cricket-card-container .cricket-card:hover .movies-card-container .movie-card .movie-card-details, .container .movies-card-container .cricket-card-container .cricket-card:hover .movie-card .movie-card-details, .container .movies-card-container .movie-card .cricket-card-container .cricket-card:hover .movie-card-details, .container .cricket-card-container .movies-card-container .cricket-card:hover .movie-card .movie-card-details, .container .cricket-card-container .movies-card-container .movie-card .cricket-card:hover .movie-card-details, .container .movies-card-container .movie-card:hover .movie-card-details {
+  opacity: 1;
+}
+
+.container .card-container .card .card-img, .container .cricket-card-container .card .card-img, .container .movies-card-container .card .card-img, .container .cricket-card-container .cricket-card .card-img, .container .movies-card-container .movie-card .card-img {
+  width: inherit;
+  position: relative;
+  padding-bottom: calc(1.32821 * 100%);
+}
+
+.container .card-container .card .card-img img, .container .cricket-card-container .card .card-img img, .container .movies-card-container .card .card-img img, .container .cricket-card-container .cricket-card .card-img img, .container .movies-card-container .movie-card .card-img img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.container .card-container .card .card-details, .container .cricket-card-container .card .card-details, .container .movies-card-container .card .card-details, .container .cricket-card-container .cricket-card .card-details, .container .movies-card-container .movie-card .card-details, .container .cricket-card-container .cricket-card .cric-card-details, .container .movies-card-container .movie-card .movie-card-details {
+  font-family: "Roboto", sans-serif;
+  opacity: 0;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  width: inherit;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 8, 15, 0)), color-stop(#192133), to(#192133));
+  background-image: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133, #192133);
+  padding: 30px 5px 7px 5px;
+}
+
+.container .card-container .card .card-details .card-title, .container .cricket-card-container .card .card-details .card-title, .container .movies-card-container .card .card-details .card-title, .container .cricket-card-container .cricket-card .card-details .card-title, .container .movies-card-container .movie-card .card-details .card-title, .container .cricket-card-container .cricket-card .cric-card-details .card-title, .container .movies-card-container .movie-card .movie-card-details .card-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.container .card-container .card .card-details .title-info, .container .cricket-card-container .card .card-details .title-info, .container .movies-card-container .card .card-details .title-info, .container .cricket-card-container .cricket-card .card-details .title-info, .container .movies-card-container .movie-card .card-details .title-info, .container .cricket-card-container .cricket-card .cric-card-details .title-info, .container .movies-card-container .movie-card .movie-card-details .title-info {
+  font-size: 0.6rem;
+  font-weight: 600;
+  margin: 1px 0 0 0;
+}
+
+.container .card-container .card .card-details .description, .container .cricket-card-container .card .card-details .description, .container .movies-card-container .card .card-details .description, .container .cricket-card-container .cricket-card .card-details .description, .container .movies-card-container .movie-card .card-details .description, .container .cricket-card-container .cricket-card .cric-card-details .description, .container .movies-card-container .movie-card .movie-card-details .description {
+  font-size: 0.6rem;
+  margin: 3px 0 0 0;
+}
+
+.container .card-container .card .card-details .action-btn, .container .cricket-card-container .card .card-details .action-btn, .container .movies-card-container .card .card-details .action-btn, .container .cricket-card-container .cricket-card .card-details .action-btn, .container .movies-card-container .movie-card .card-details .action-btn, .container .cricket-card-container .cricket-card .cric-card-details .action-btn, .container .movies-card-container .movie-card .movie-card-details .action-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+.container .card-container .card .card-details .action-btn .btn, .container .cricket-card-container .card .card-details .action-btn .btn, .container .movies-card-container .card .card-details .action-btn .btn, .container .cricket-card-container .cricket-card .card-details .action-btn .btn, .container .movies-card-container .movie-card .card-details .action-btn .btn, .container .cricket-card-container .cricket-card .cric-card-details .action-btn .btn, .container .movies-card-container .movie-card .movie-card-details .action-btn .btn {
+  font-size: 0.6rem;
+  padding: 3px 5px;
+}
+
+.container .card-container .card .card-details .action-btn .btn:hover, .container .cricket-card-container .card .card-details .action-btn .btn:hover, .container .movies-card-container .card .card-details .action-btn .btn:hover, .container .cricket-card-container .cricket-card .card-details .action-btn .btn:hover, .container .movies-card-container .movie-card .card-details .action-btn .btn:hover, .container .cricket-card-container .cricket-card .cric-card-details .action-btn .btn:hover, .container .movies-card-container .movie-card .movie-card-details .action-btn .btn:hover {
+  background-color: grey;
+  border-radius: 2px;
+}
+
+.container .card-container .card .card-details .action-btn * + *, .container .cricket-card-container .card .card-details .action-btn * + *, .container .movies-card-container .card .card-details .action-btn * + *, .container .cricket-card-container .cricket-card .card-details .action-btn * + *, .container .movies-card-container .movie-card .card-details .action-btn * + *, .container .cricket-card-container .cricket-card .cric-card-details .action-btn * + *, .container .movies-card-container .movie-card .movie-card-details .action-btn * + * {
+  margin: 1px 0;
+}
+
+.container .cricket-card-container .cricket-card {
+  width: 200px;
+}
+
+.container .cricket-card-container .cricket-card .card-img {
+  width: inherit;
+  position: relative;
+  padding-bottom: calc(0.56821 * 100%);
+}
+
+.container .cricket-card-container .cricket-card .cric-card-details .card-title .link-btn {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .card-container, .container .cricket-card-container, .container .movies-card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    outline: solid;
+  }
+  .cricket-card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+body {
+  background-color: #141b29;
+  font-family: "Roboto", sans-serif;
+  width: 99%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+}
+
+@media (max-width: 700px) {
+  body {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+.heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+  margin: .5em 0 .5em 1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+a .fas {
+  margin: 0 5px 0 0;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+footer .footer-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+footer .footer-content a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #7d93bf;
+}
+
+footer .footer-content a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

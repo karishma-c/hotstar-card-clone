@@ -1,0 +1,13 @@
+@mixin flex($direction,$main-axis,$cross-axis) {
+    display: flex;
+    flex-flow: $direction wrap;
+    @if $main-axis == row {
+        justify-content: $main-axis;
+        align-items: $cross-axis;
+    }
+    @else
+    {
+        justify-content: $cross-axis;
+        align-items:  $main-axis;
+    }
+}
