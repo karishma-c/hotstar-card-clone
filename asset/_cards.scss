@@ -126,16 +126,15 @@
 @media (max-width:700px)
 {
     
-    .card-container
+    .card-container 
     {
-        @include flex(column,center,center);
+        @include flex(column,space-around,center);
     
-        
           
     }
     .cricket-card-container
     {
-        @include flex(column,center,center);
+        @include flex(column,space-around,center);
     }
-
+     
 }

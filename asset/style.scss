@@ -14,7 +14,6 @@ body{
     font-family: $font-family;
 
     width: 99%;
-    height: 90vh;
     @include flex(column,space-evenly,flex-start)
 }
 @media (max-width:700px)
@@ -22,8 +21,8 @@ body{
     body{
        
         width: 95%;
-        margin: 0 auto;
-        height: auto;
+        @include flex(column,center,center);
+
     }
 
 }
