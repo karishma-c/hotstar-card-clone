@@ -135,7 +135,6 @@
         .card-container , .cricket-card-container , .movies-card-container
         {
             @include flex(column,center,center);
-            margin: 0 auto;
         }
     }
    
