@@ -5,7 +5,7 @@
 
     .card-container
     {
-        @include flex(row,flex-start,flex-start);
+        @include flex(row,flex-start,center);
         .card
         {
            margin: .5em 0 1em 1em;
@@ -123,18 +123,14 @@
     }  
 }
 
-@media (max-width:700px)
+@media (max-width:500px) 
 {
     
-    .card-container 
+    .card-container , .cricket-card-container  
     {
         @include flex(column,space-around,center);
-    
-          
+        margin:0 auto;
     }
-    .cricket-card-container
-    {
-        @include flex(column,space-around,center);
-    }
+
      
 }
