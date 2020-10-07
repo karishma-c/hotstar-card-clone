@@ -23,9 +23,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -142,7 +142,7 @@
 }
 
 @media (max-width: 500px) {
-  .card-container, .container .cricket-card-container, .container .movies-card-container, .cricket-card-container {
+  .card-container, .container .cricket-card-container, .container .movies-card-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -157,6 +157,9 @@
         -ms-flex-align: space-around;
             align-items: space-around;
     margin: 0 auto;
+  }
+  .card-container .card-details .card-title, .container .cricket-card-container .card-details .card-title, .container .movies-card-container .card-details .card-title, .container .cricket-card-container .cricket-card .cric-card-details .card-title, .container .movies-card-container .movie-card .movie-card-details .card-title {
+    text-align: center;
   }
 }
 
