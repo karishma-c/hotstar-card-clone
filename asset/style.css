@@ -160,7 +160,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .card-container, .container .cricket-card-container, .container .movies-card-container, .cricket-card-container, .movies-card-container {
+  .container .card-container, .container .cricket-card-container, .container .movies-card-container, .container .cricket-card-container, .container .movies-card-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,9 +171,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: space-around;
-        -ms-flex-align: space-around;
-            align-items: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
   }
 }

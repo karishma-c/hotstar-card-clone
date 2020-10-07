@@ -132,13 +132,14 @@
     .container
     {
         @include flex(column,center,center);
+        .card-container , .cricket-card-container , .movies-card-container
+        {
+            @include flex(column,center,center);
+            margin: 0 auto;
+        }
     }
    
-    .card-container , .cricket-card-container , .movies-card-container
-    {
-        @include flex(column,space-around,center);
-        margin: 0 auto;
-    }
+  
 
      
 }
