@@ -80,19 +80,19 @@
 }
 
 .container .card-container .card .card-details .card-title, .container .cricket-card-container .card .card-details .card-title, .container .movies-card-container .card .card-details .card-title, .container .cricket-card-container .cricket-card .card-details .card-title, .container .movies-card-container .movie-card .card-details .card-title, .container .cricket-card-container .cricket-card .cric-card-details .card-title, .container .movies-card-container .movie-card .movie-card-details .card-title {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 600;
   margin: 0;
 }
 
 .container .card-container .card .card-details .title-info, .container .cricket-card-container .card .card-details .title-info, .container .movies-card-container .card .card-details .title-info, .container .cricket-card-container .cricket-card .card-details .title-info, .container .movies-card-container .movie-card .card-details .title-info, .container .cricket-card-container .cricket-card .cric-card-details .title-info, .container .movies-card-container .movie-card .movie-card-details .title-info {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   font-weight: 600;
   margin: 1px 0 0 0;
 }
 
 .container .card-container .card .card-details .description, .container .cricket-card-container .card .card-details .description, .container .movies-card-container .card .card-details .description, .container .cricket-card-container .cricket-card .card-details .description, .container .movies-card-container .movie-card .card-details .description, .container .cricket-card-container .cricket-card .cric-card-details .description, .container .movies-card-container .movie-card .movie-card-details .description {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   margin: 3px 0 0 0;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .container .card-container .card .card-details .action-btn .btn, .container .cricket-card-container .card .card-details .action-btn .btn, .container .movies-card-container .card .card-details .action-btn .btn, .container .cricket-card-container .cricket-card .card-details .action-btn .btn, .container .movies-card-container .movie-card .card-details .action-btn .btn, .container .cricket-card-container .cricket-card .cric-card-details .action-btn .btn, .container .movies-card-container .movie-card .movie-card-details .action-btn .btn {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   padding: 3px 5px;
 }
 
@@ -137,7 +137,7 @@
 }
 
 .container .cricket-card-container .cricket-card .cric-card-details .card-title .link-btn {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 600;
 }
 
@@ -156,7 +156,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    outline: solid;
   }
   .cricket-card-container {
     display: -webkit-box;
@@ -223,7 +222,7 @@ body {
 a {
   text-decoration: none;
   color: white;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   margin: 0;
 }
 
@@ -237,15 +236,15 @@ footer {
 
 footer .footer-content {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   color: white;
 }
 
 footer .footer-content a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-decoration: none;
-  color: #7d93bf;
+  color: lightgray;
 }
 
 footer .footer-content a:hover {

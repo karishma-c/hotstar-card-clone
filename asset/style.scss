@@ -1,6 +1,6 @@
-@import "./asset/variables";
-@import "./asset/mixinflex";
-@import "./asset/cards";
+@import "./variables";
+@import "./mixinflex";
+@import "./cards";
 
 * {
     -webkit-box-sizing: border-box;
@@ -54,7 +54,7 @@ footer{
         a {
             font-size: $font-size-md;
             text-decoration: none;
-            color: lighten($color: $color-2, $amount: 250);
+            color: lightgray;
             &:hover {
                 text-decoration: underline ;
             }
