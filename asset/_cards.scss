@@ -14,7 +14,7 @@
            transition-timing-function: ease;
            position: relative;
            border-radius: $border-radius;
-
+           margin:10px auto;
      
             &:hover
            {
@@ -125,16 +125,15 @@
 
 @media (max-width:500px) 
 {
-    
-    .card-container  
+    .heading
+    {
+        text-align: center;
+        font-size: 1em;
+    }
+    .card-container , .cricket-card-container , .movies-card-container
     {
         @include flex(column,space-around,center);
-        margin:0 auto;
-        .card-details {
-            .card-title {
-                text-align: center;
-            }
-        }
+        margin: 0 auto;
     }
 
      
